@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syeda Fatima Qadri | Digital Marketing Specialist</title>
+<meta name="description" content="Digital marketing specialist in Karachi: social media management, content creation and client handling.">
+<!-- Favicon: "SFS" initials (also saved as favicon.svg) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230C1733'/%3E%3Ctext x='30' y='40' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='23' text-anchor='middle' fill='%23FFFFFF' letter-spacing='1'%3ESFS%3C/text%3E%3Ccircle cx='53' cy='38' r='3.5' fill='%234FE3C1'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0C1733">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C1733; --card:#142450; --card2:#1B2E63; --line:rgba(255,255,255,.13);
+  --lime:#4FE3C1; --acc:#4FE3C1; --text:#F2F5FC; --muted:#A3B1D6;
+  --head:"Sora","DM Sans",system-ui,sans-serif; --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px}
+h2 em{font-style:normal;color:var(--acc)}
+p{margin:0 0 1em}
+.sub{color:var(--muted);max-width:56ch;margin-bottom:48px}
+
+/* NAV */
+header{position:fixed;inset:0 0 auto 0;z-index:20;padding:16px 0;background:rgba(12,23,51,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.05)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.2rem var(--head);text-decoration:none}
+.brand i{font:600 1.3rem var(--head);font-style:normal;letter-spacing:.16em;color:#fff;display:flex;align-items:center}
+.brand i::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);margin-left:5px;margin-top:6px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.brand:hover i::after{transform:scale(1.7);box-shadow:0 0 0 5px rgba(79,227,193,.2)}
+.brand .sep{width:1px;height:24px;background:rgba(255,255,255,.22)}
+.brand small{font:400 .8rem var(--body);letter-spacing:.06em;color:#9FB0D8;transition:color .25s}
+.brand:hover small{color:#fff}
+@media (max-width:620px){.brand .sep,.brand small{display:none}}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav ul a{text-decoration:none;color:#C5CEE6;transition:color .2s}
+nav ul a:hover{color:var(--acc)}
+.menu{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:10px;width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:999px;font:600 .98rem var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s}
+.btn.lime{background:var(--lime);color:#000}
+.btn.lime:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(79,227,193,.3)}
+.btn.grey{background:rgba(255,255,255,.12);color:#fff}
+.btn.grey:hover{background:rgba(255,255,255,.2)}
+.btn.line{border-color:var(--line);color:var(--text);background:transparent}
+.btn.line:hover{border-color:var(--acc);color:var(--acc)}
+
+/* HERO */
+.hero{position:relative;padding:150px 0 130px;overflow:hidden}
+.hero::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-260px;height:420px;background:radial-gradient(ellipse at center,rgba(79,227,193,.5),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hi{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:.92rem;margin-bottom:26px}
+.hi b{width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(79,227,193,.2)}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:600}
+.hero h1 mark{background:var(--lime);color:#000;padding:0 .14em;border-radius:8px;font-weight:700;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero p.lead{color:#B9C4E0;max-width:46ch;margin:26px 0 34px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:22px}
+.reach{display:flex;align-items:center;gap:12px;text-decoration:none}
+.reach span.ic{width:46px;height:46px;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:grid;place-items:center;color:var(--acc)}
+.reach small{display:block;color:var(--muted);font-size:.78rem;line-height:1.2}
+.reach strong{font-size:.98rem}
+
+/* Hero panel (no photo) */
+.panel{position:relative;display:grid;gap:14px}
+.pc{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:22px;padding:24px;backdrop-filter:blur(6px)}
+.pc h3{font-size:1.05rem;margin-bottom:14px}
+.pc.hl{background:var(--lime);border-color:var(--lime);color:#0C1733}
+.pc.hl small{color:#0C3B33;display:block}
+.pc.hl b{display:block;font:700 1.35rem var(--head);margin-bottom:4px}
+.prow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.prow .pc b{display:block;font:700 2rem/1.1 var(--head);color:var(--acc)}
+.prow .pc span{font-size:.9rem;color:var(--muted)}
+.badge{position:absolute;z-index:3;right:-14px;top:-62px;width:118px;height:118px;border-radius:50%;background:var(--lime);display:grid;place-items:center;box-shadow:0 0 0 8px rgba(79,227,193,.14)}
+.badge svg{position:absolute;inset:0;animation:spin 18s linear infinite}
+.badge text{font:700 10.5px var(--body);letter-spacing:2px;fill:#0C1733}
+.badge b{font:700 1.5rem var(--head);color:#0C1733}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+
+/* HERO BACKGROUND: digital marketing elements */
+.hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-bg .hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 68% 38%,#000,transparent 72%);mask-image:radial-gradient(ellipse at 68% 38%,#000,transparent 72%)}
+.hero-bg .rings{position:absolute;right:-190px;top:-210px;width:700px;height:700px;opacity:.9}
+.hero-bg .rings .spin{transform-origin:350px 350px;animation:spin 60s linear infinite}
+.hero-bg .chart{position:absolute;left:0;bottom:0;width:100%;height:68%}
+.hero-bg .chart .ln{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 2.8s .5s cubic-bezier(.4,0,.2,1) both}
+.hero-bg .chart .ar{animation:fade 1.6s 1.6s both}
+.hero-bg .chart .pulse{transform-box:fill-box;transform-origin:center;animation:ping 2.4s 3s ease-out infinite}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+.hico{position:absolute;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;color:#4FE3C1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(6px);box-shadow:0 12px 30px rgba(0,0,0,.25);animation:bob 7s ease-in-out infinite}
+.hico svg{width:24px;height:24px}
+.hico.a{left:2.5%;top:27%;animation-delay:-1s}
+.hico.b{left:45%;top:17%;animation-delay:-3s;width:50px;height:50px}
+.hico.c{left:41%;bottom:24%;animation-delay:-5s}
+.hico.d{left:30%;top:13%;animation-delay:-2s;width:46px;height:46px;color:#fff}
+.hico.e{right:1.5%;top:56%;animation-delay:-4s;width:50px;height:50px}
+.hico.f{left:19%;bottom:11%;animation-delay:-6s;width:48px;height:48px;color:#fff}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+@media (max-width:960px){.hico.b,.hico.c,.hico.e,.hico.f{display:none}.hero-bg .rings{width:480px;height:480px;right:-200px;top:-140px}.hero-bg .chart{height:48%}}
+@media (max-width:620px){.hico.a,.hico.d{display:none}}
+
+/* MARQUEE */
+.strip{background:var(--lime);color:#000;overflow:hidden;white-space:nowrap;padding:16px 0;position:relative;z-index:2}
+.strip div{display:inline-block;animation:slide 26s linear infinite;font:700 1.05rem var(--head)}
+.strip span{margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section.s{padding:104px 0}
+.light{--bg:#F4F6FA;--card:#FFFFFF;--card2:#F4F6FA;--line:#DFE4EE;--text:#12203F;--muted:#5A667D;--acc:#0B7F69;background:var(--bg);color:var(--text)}
+.alt{background:#0A1229}
+
+/* ABOUT */
+.about-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:44px}
+.about-top h2{font-size:clamp(2rem,4.6vw,3.4rem);max-width:17ch;margin:0}
+.about-top p{max-width:34ch;margin:0;color:var(--muted)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.bc{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:32px;transition:transform .25s,box-shadow .25s}
+.bc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(12,23,51,.1)}
+.bc h3{font-size:1.15rem;margin-bottom:18px}
+.bc.story{grid-column:span 4;background:#0C1733;border-color:#0C1733;color:#fff;position:relative;overflow:hidden}
+.bc.story::after{content:"";position:absolute;width:260px;height:260px;right:-80px;bottom:-110px;border-radius:50%;background:radial-gradient(circle,rgba(79,227,193,.45),transparent 70%)}
+.bc.story .big{font:600 clamp(1.3rem,2.4vw,1.75rem)/1.35 var(--head);letter-spacing:-.01em;margin-bottom:20px;position:relative;z-index:1}
+.bc.story .big em{font-style:normal;color:#4FE3C1}
+.bc.story p{color:#B9C4E0;position:relative;z-index:1;max-width:60ch}
+.bc.num{grid-column:span 2;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;gap:18px;transition:transform .25s,box-shadow .25s,border-color .4s}
+.bc.num::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(160deg,#16275A,#0C1733);clip-path:circle(0 at calc(100% - 46px) 46px);transition:clip-path .65s cubic-bezier(.2,.8,.2,1)}
+.bc.num:hover::before{clip-path:circle(160% at calc(100% - 46px) 46px)}
+.bc.num:hover{border-color:#0C1733}
+.bc.num .corner{position:absolute;top:22px;right:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:#0C1733;transition:transform .5s,background .4s,color .4s,border-color .4s}
+.bc.num:hover .corner{background:#4FE3C1;color:#0C1733;border-color:#4FE3C1;transform:rotate(45deg)}
+.bc.num .row b{display:block;font:700 4rem/1 var(--head);letter-spacing:-.04em;color:#0C1733;transition:color .4s}
+.bc.num .row b::after{content:"";display:block;width:34px;height:4px;border-radius:4px;background:#4FE3C1;margin:12px 0 10px;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.bc.num:hover .row b::after{width:64px}
+.bc.num .row span{color:var(--muted);font-size:.95rem;transition:color .4s}
+.bc.num .row+.row{padding-top:20px;border-top:1px solid var(--line);transition:border-color .4s}
+.bc.num .row+.row b{font-size:2.8rem}
+.bc.num:hover .row b{color:#4FE3C1}
+.bc.num:hover .row span{color:#B9C4E0}
+.bc.num:hover .row+.row{border-color:rgba(255,255,255,.18)}
+.bc.how{grid-column:span 3}
+.bc.path{grid-column:span 3}
+.step{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.step:first-of-type{border-top:0;padding-top:0}
+.step i{font:700 .85rem var(--head);font-style:normal;width:44px;height:44px;border-radius:14px;background:#0C1733;color:#4FE3C1;display:grid;place-items:center}
+.step b{display:block;font-family:var(--head);font-size:1.02rem}
+.step span{color:var(--muted);font-size:.95rem;line-height:1.5;display:block}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl div{position:relative;padding-bottom:20px}
+.tl div:last-child{padding-bottom:0}
+.tl div::before{content:"";position:absolute;left:-26px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid #0C1733}
+.tl div.now::before{background:#4FE3C1;box-shadow:0 0 0 5px rgba(79,227,193,.3)}
+.tl small{color:var(--acc);font-weight:600;font-size:.85rem}
+.tl b{display:block;font-family:var(--head);font-size:1.02rem}
+.tl span{color:var(--muted);font-size:.93rem}
+.bc.now{grid-column:span 6;background:#4FE3C1;border-color:#4FE3C1;color:#0C1733;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.bc.now h3{font-size:clamp(1.4rem,2.6vw,2rem);margin:0 0 6px}
+.bc.now p{margin:0;color:#0C3B33}
+.bc.now .btn.dk{background:#0C1733;color:#fff}
+.bc.now .btn.dk:hover{transform:translateY(-2px)}
+.bc.now .btn.ol{border-color:#0C1733;color:#0C1733}
+.bc.now .btn.ol:hover{background:rgba(12,23,51,.08)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
+.box h3{font-size:1.1rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card2);font-size:.88rem}
+
+/* SERVICES */
+.sgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.sc{position:relative;isolation:isolate;overflow:hidden;min-height:290px;border-radius:30px;padding:28px;background:linear-gradient(160deg,#16275A,#101D45);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;color:#fff;transition:color .4s,border-color .4s}
+.sc::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--lime);clip-path:circle(0 at calc(100% - 50px) 50px);transition:clip-path .6s cubic-bezier(.2,.8,.2,1)}
+.sc:hover::before,.sc:focus-visible::before{clip-path:circle(160% at calc(100% - 50px) 50px)}
+.sc:hover,.sc:focus-visible{color:#0C1733;border-color:var(--lime)}
+.sc .top{display:flex;justify-content:space-between;align-items:center}
+.sc .tag{padding:6px 14px;border-radius:999px;border:1px solid var(--line);font-size:.8rem;transition:border-color .4s}
+.sc:hover .tag{border-color:rgba(12,23,51,.3)}
+.sc .go{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .4s,background .4s,color .4s,border-color .4s}
+.sc:hover .go{background:#0C1733;color:#4FE3C1;border-color:#0C1733;transform:rotate(45deg)}
+.sc .no{position:absolute;right:26px;bottom:6px;font:700 6.5rem/1 var(--head);color:rgba(255,255,255,.05);z-index:-1;transition:color .4s}
+.sc:hover .no{color:rgba(12,23,51,.08)}
+.sc h3{font-size:1.45rem;margin-bottom:8px}
+.sc.w4 h3{font-size:1.9rem}
+.sc p{color:#B2C0E3;margin:0 0 18px;font-size:.96rem;max-width:42ch;transition:color .4s}
+.sc:hover p{color:#0C3B33}
+.sc .chips{display:flex;gap:6px;flex-wrap:wrap}
+.sc .chips span{font-size:.78rem;padding:4px 11px;border-radius:8px;background:rgba(255,255,255,.08);transition:background .4s}
+.sc:hover .chips span{background:rgba(12,23,51,.1)}
+.sc.w2{grid-column:span 2}.sc.w3{grid-column:span 3}.sc.w4{grid-column:span 4}
+
+/* GALLERY */
+.g-top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.g-top h2{margin:0}
+.g-top p{color:var(--muted);margin:10px 0 0;max-width:46ch}
+.filters{display:flex;gap:6px;flex-wrap:wrap;padding:6px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.filters button{font:600 .9rem var(--body);padding:9px 18px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:background .2s,color .2s}
+.filters button:hover{color:var(--text)}
+.filters button.on{background:#0C1733;color:#4FE3C1}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;grid-auto-flow:dense;gap:16px}
+.tile{position:relative;isolation:isolate;overflow:hidden;border:0;padding:0;border-radius:26px;cursor:pointer;background:#0C1733;color:#fff;text-align:left;font:inherit;animation:pop .5s both}
+.tile.big{grid-column:span 2;grid-row:span 2}.tile.wide{grid-column:span 2}.tile.tall{grid-row:span 2}
+.tile[hidden]{display:none}
+@keyframes pop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.tile:hover img{transform:scale(1.07)}
+.fb{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;text-align:center;padding:20px;background:linear-gradient(145deg,#142450,#0C1733);color:#8FA0CC;font-size:.82rem}
+.fb::before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;right:-25%;top:-25%;background:radial-gradient(circle,rgba(79,227,193,.28),transparent 70%)}
+.fb b{font:700 2.6rem/1 var(--head);color:#4FE3C1;position:relative}
+.fb code{font-size:.75rem;background:rgba(255,255,255,.08);padding:3px 8px;border-radius:6px;position:relative}
+.tile .cat{position:absolute;z-index:3;top:16px;left:16px;padding:6px 14px;border-radius:999px;background:rgba(12,23,51,.72);backdrop-filter:blur(8px);color:#fff;font-size:.78rem;font-weight:600}
+.tile video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.tile .play{position:absolute;z-index:3;left:16px;bottom:16px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);color:#0C1733;display:grid;place-items:center;padding-left:2px;transition:opacity .3s}
+.tile:hover .play{opacity:0}
+.tile .go{position:absolute;z-index:3;top:14px;right:14px;width:42px;height:42px;border-radius:50%;background:#4FE3C1;color:#0C1733;display:grid;place-items:center;opacity:0;transform:scale(.6) rotate(-45deg);transition:opacity .3s,transform .4s cubic-bezier(.2,.8,.2,1)}
+.tile:hover .go,.tile:focus-visible .go{opacity:1;transform:none}
+.tile .cap{position:absolute;z-index:3;left:0;right:0;bottom:0;padding:44px 20px 18px;background:linear-gradient(transparent,rgba(12,23,51,.92));transform:translateY(55%);opacity:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .4s}
+.tile:hover .cap,.tile:focus-visible .cap{transform:none;opacity:1}
+.tile .cap b{display:block;font:600 1.1rem var(--head)}
+.tile .cap span{font-size:.85rem;color:#B9C4E0}
+.g-note{margin-top:22px;color:var(--muted);font-size:.9rem}
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,980px);width:100%;color:#fff;overflow:visible}
+dialog::backdrop{background:rgba(6,12,28,.88);backdrop-filter:blur(6px)}
+.lb{display:grid;gap:14px}
+.lb img{max-width:100%;max-height:74vh;margin:0 auto;border-radius:18px;object-fit:contain}
+.lb video{max-width:100%;max-height:74vh;margin:0 auto;border-radius:18px;background:#000}
+.lb video[hidden],.lb img[hidden]{display:none}
+.lb .meta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.lb .meta b{font:600 1.2rem var(--head)}
+.lb .meta span{color:#A3B1D6;font-size:.9rem;margin-left:10px}
+.lb .nav{display:flex;gap:8px;align-items:center}
+.lb button,.lb a.v{height:44px;min-width:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:600 .9rem var(--body);cursor:pointer;display:inline-grid;place-items:center;text-decoration:none}
+.lb a.v[hidden]{display:none}
+.lb button:hover,.lb a.v:hover{background:#4FE3C1;color:#0C1733;border-color:#4FE3C1}
+
+/* EXPERIENCE */
+.job{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:34px 0;border-top:1px solid var(--line)}
+.job:last-of-type{border-bottom:1px solid var(--line)}
+.job .when{color:var(--acc);font:600 .95rem var(--head)}
+.job .when small{display:block;color:var(--muted);font:400 .9rem var(--body);margin-top:4px}
+.job h3{font-size:1.5rem}
+.job .org{color:var(--muted);margin:6px 0 16px}
+.job ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.job li{margin-bottom:6px}
+.extra{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:44px}
+.extra .box.hl{background:var(--lime);border-color:var(--acc);color:#000}
+.extra .box.hl p{color:#0C3B33}
+.extra p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* CONTACT */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}
+.info a,.info span{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;word-break:break-word}
+.info a:hover{color:var(--acc)}
+.info small{display:block;color:var(--muted);font-size:.8rem}
+.formcard{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px}
+form{display:grid;gap:18px}
+label{display:grid;gap:7px;font-size:.9rem;font-weight:600}
+input,textarea{font:inherit;font-weight:400;color:var(--text);background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;width:100%;transition:border-color .2s}
+input:focus,textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px rgba(79,227,193,.15)}
+textarea{min-height:140px;resize:vertical}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.status{min-height:1.4em;font-size:.92rem;color:var(--muted)}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+
+@media (max-width:960px){
+  .menu{display:block}
+  nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#0C1733;border-bottom:1px solid var(--line);padding:8px 24px 16px;display:none}
+  nav ul.open{display:flex}
+  nav ul a{display:block;padding:12px 0}
+  nav>.btn{display:none}
+  .hero{padding-top:110px}
+  .hero .wrap,.contact{grid-template-columns:1fr}
+  .bc.story,.bc.num,.bc.how,.bc.path,.bc.now{grid-column:span 6}
+  .badge{right:6px;top:-48px;width:100px;height:100px}
+  .panel{margin-top:30px}
+  .sc.w2,.sc.w3,.sc.w4{grid-column:span 6}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}
+  .job{grid-template-columns:1fr;gap:6px}
+  section.s{padding:70px 0}
+}
+@media (max-width:620px){.gallery{grid-template-columns:1fr;grid-auto-rows:270px}.tile.big,.tile.wide,.tile.tall{grid-column:auto;grid-row:auto}.sc{min-height:250px}.filters{border-radius:22px}.bc{padding:24px}.formcard{padding:22px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="#home" id="logo" aria-label="Syeda Fatima Qadri, back to top"><i>SFQ</i><span class="sep"></span><small>Digital Marketing</small></a>
+    <ul id="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn lime" href="#contact">Get in touch</a>
+    <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hgrid"></div>
+      <svg class="rings" viewBox="0 0 700 700" fill="none">
+        <circle cx="350" cy="350" r="130" stroke="rgba(79,227,193,.2)"/>
+        <circle cx="350" cy="350" r="210" stroke="rgba(255,255,255,.08)"/>
+        <circle cx="350" cy="350" r="290" stroke="rgba(79,227,193,.12)"/>
+        <g class="spin"><circle cx="350" cy="350" r="340" stroke="rgba(79,227,193,.3)" stroke-dasharray="3 12"/><circle cx="350" cy="10" r="5" fill="#4FE3C1"/></g>
+      </svg>
+      <svg class="chart" viewBox="0 0 1440 460" preserveAspectRatio="xMidYMax slice" fill="none">
+        <defs>
+          <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FE3C1" stop-opacity=".28"/><stop offset="1" stop-color="#4FE3C1" stop-opacity="0"/></linearGradient>
+          <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4FE3C1" stop-opacity=".1"/><stop offset=".6" stop-color="#4FE3C1" stop-opacity=".7"/><stop offset="1" stop-color="#4FE3C1"/></linearGradient>
+        </defs>
+        <g fill="rgba(255,255,255,.045)">
+          <rect x="60" y="360" width="34" height="100" rx="6"/><rect x="190" y="330" width="34" height="130" rx="6"/><rect x="320" y="345" width="34" height="115" rx="6"/><rect x="450" y="290" width="34" height="170" rx="6"/><rect x="580" y="300" width="34" height="160" rx="6"/><rect x="710" y="245" width="34" height="215" rx="6"/><rect x="840" y="260" width="34" height="200" rx="6"/><rect x="970" y="190" width="34" height="270" rx="6"/><rect x="1100" y="170" width="34" height="290" rx="6"/><rect x="1230" y="120" width="34" height="340" rx="6"/><rect x="1360" y="90" width="34" height="370" rx="6"/>
+        </g>
+        <path class="ar" d="M0 400 C120 390 170 330 270 340 S430 370 530 300 S700 320 800 240 S1000 260 1100 180 S1300 160 1440 100 L1440 460 L0 460Z" fill="url(#ga)"/>
+        <path class="ln" pathLength="1" d="M0 400 C120 390 170 330 270 340 S430 370 530 300 S700 320 800 240 S1000 260 1100 180 S1300 160 1440 100" stroke="url(#gl)" stroke-width="3" stroke-linecap="round"/>
+        <circle class="pulse" cx="1380" cy="112" r="6" fill="#4FE3C1"/><circle cx="1380" cy="112" r="6" fill="#4FE3C1"/>
+      </svg>
+      <span class="hico a"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6.3 5.3 5.3 0 0 1 21.3 12c-2.3 4.600-9.300 9-9.300 9z"/></svg></span><span class="hico b"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.500 7.200L4 20l1-4.200A8 8 0 1 1 21 12z"/></svg></span><span class="hico c"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8.500 6 3.500-6 3.500z"/></svg></span><span class="hico d"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 9h14M4 15h14M10 3 8 21M16 3l-2 18"/></svg></span><span class="hico e"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10.300 20a2 2 0 0 0 3.400 0"/></svg></span><span class="hico f"><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1zM15 9a4 4 0 0 1 0 6M18 6.500a8 8 0 0 1 0 11"/></svg></span>
+    </div>
+    <div class="wrap">
+      <div>
+        <div class="hi"><b></b>Hi, I'm</div>
+        <h1><mark>Syeda Fatima Qadri</mark><br>Digital Marketing<br>Specialist</h1>
+        <p class="lead">I help brands and institutes grow online through social media management, scroll-stopping content and fast, friendly client communication.</p>
+        <div class="cta">
+          <a class="btn grey" href="#about">More Info</a>
+          <!-- UPDATE: your Gmail address -->
+          <a class="reach" href="mailto:syedafatimasfs20@gmail.com">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><small>Email me</small><strong>syedafatimasfs20@gmail.com</strong></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 132 132"><defs><path id="c" d="M66,66 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs><text><textPath href="#c">DIGITAL MARKETING • 4+ YEARS •</textPath></text></svg>
+          <b>&#10038;</b>
+        </div>
+        <div class="pc">
+          <h3>What I work with</h3>
+          <ul class="tags"><li>Canva</li><li>CapCut</li><li>Meta Business Suite</li><li>WhatsApp Business</li><li>MS Excel</li></ul>
+        </div>
+        <div class="prow">
+          <div class="pc"><b>4+</b><span>Years of experience</span></div>
+          <div class="pc"><b>2</b><span>Organisations</span></div>
+        </div>
+        <div class="pc hl"><b>Project of the Month</b><small>Aptech ACCP AI, 'All Abt Nobel' web platform</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div>
+      <span>Social Media Management &#10038;</span><span>Content Strategy &#10038;</span><span>Reels &amp; Posters &#10038;</span><span>Meta Ads &#10038;</span><span>Lead Generation &#10038;</span><span>Copywriting &#10038;</span>
+      <span>Social Media Management &#10038;</span><span>Content Strategy &#10038;</span><span>Reels &amp; Posters &#10038;</span><span>Meta Ads &#10038;</span><span>Lead Generation &#10038;</span><span>Copywriting &#10038;</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="s light" id="about">
+    <div class="wrap">
+      <div class="about-top">
+        <h2>Marketing that starts with <em>listening.</em></h2>
+        <p>A little about how I work, where I've been and what I'm looking for next.</p>
+      </div>
+      <div class="bento">
+        <div class="bc story">
+          <div class="big">I turn everyday conversations and content into <em>real customers.</em></div>
+          <p>I'm a detail-oriented marketer with four years of experience, across direct sales at Oriflame Pakistan and digital marketing and admin at Tareek Al Jannah Institute. I love creating engaging content, managing social pages and driving growth through creative strategy.</p>
+        </div>
+        <div class="bc num">
+          <span class="corner" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <div class="row"><b data-count="4" data-suffix="+">4+</b><span>Years in sales, admin and digital marketing</span></div>
+          <div class="row"><b data-count="2" data-suffix="">2</b><span>Organisations served</span></div>
+        </div>
+        <div class="bc how">
+          <h3>How I work</h3>
+          <div class="step"><i>01</i><div><b>Listen first</b><span>Selling taught me to understand what people need before I pitch.</span></div></div>
+          <div class="step"><i>02</i><div><b>Show up consistently</b><span>Regular, on-brand content on the platforms your audience already uses.</span></div></div>
+          <div class="step"><i>03</i><div><b>Reply fast, stay organised</b><span>Quick answers and tidy records turn inquiries into admissions and orders.</span></div></div>
+        </div>
+        <div class="bc path">
+          <h3>My path</h3>
+          <div class="tl">
+            <div><small>2022</small><b>Brand Partner</b><span>Oriflame Pakistan: sales, clients and social selling</span></div>
+            <div><small>2024</small><b>Assistant Admin &amp; Digital Marketing</b><span>Tareek Al Jannah Institute: content, pages and inquiries</span></div>
+            <div class="now"><small>Now</small><b>Growing in marketing and tech</b><span>Diploma in Software Engineering at Aptech ACCP AI</span></div>
+          </div>
+        </div>
+        <div class="bc now">
+          <div>
+            <h3>Looking for my next full-time role</h3>
+            <p>Digital Marketing or Social Media Management. Let's talk.</p>
+          </div>
+          <div class="btns">
+            <!-- UPDATE: put resume.pdf next to index.html -->
+            <a class="btn dk" href="resume.pdf" download>Download resume</a>
+            <a class="btn ol" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="s alt" id="services">
+    <div class="wrap">
+      <h2>What I can <em>do for you</em></h2>
+      <p class="sub">Practical marketing support, built on running real social pages and talking to real customers. Tap any card to start a conversation.</p>
+      <div class="sgrid">
+        <a class="sc w4" href="#contact">
+          <div class="top"><span class="tag">Social</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">01</span>
+          <div><h3>Social media management</h3><p>Planning, posting and managing Instagram and Facebook pages so your brand shows up consistently and your audience keeps coming back.</p><div class="chips"><span>Meta Business Suite</span><span>Content strategy</span><span>Page management</span></div></div>
+        </a>
+        <a class="sc w2" href="#contact">
+          <div class="top"><span class="tag">Content</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">02</span>
+          <div><h3>Content creation</h3><p>Flyers, posters and reels designed to fit your brand.</p><div class="chips"><span>Canva</span><span>CapCut</span><span>Reels</span></div></div>
+        </a>
+        <a class="sc w2" href="#contact">
+          <div class="top"><span class="tag">Words</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">03</span>
+          <div><h3>Copywriting</h3><p>Clear captions and messages that explain your offer and invite action.</p><div class="chips"><span>Captions</span><span>Messaging</span></div></div>
+        </a>
+        <a class="sc w2" href="#contact">
+          <div class="top"><span class="tag">Ads</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">04</span>
+          <div><h3>Meta Ads (basic)</h3><p>Simple campaigns that bring in inquiries.</p><div class="chips"><span>Lead generation</span><span>Meta Ads</span></div></div>
+        </a>
+        <a class="sc w2" href="#contact">
+          <div class="top"><span class="tag">People</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">05</span>
+          <div><h3>Client communication</h3><p>Fast, friendly replies from first question to order or admission.</p><div class="chips"><span>WhatsApp Business</span><span>Inbox</span></div></div>
+        </a>
+        <a class="sc w3" href="#contact">
+          <div class="top"><span class="tag">Admin</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">06</span>
+          <div><h3>Admin and reporting</h3><p>Organised records, forms and schedules kept tidy and up to date.</p><div class="chips"><span>MS Excel</span><span>Google Forms</span></div></div>
+        </a>
+        <a class="sc w3" href="#contact">
+          <div class="top"><span class="tag">Learning</span><span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          <span class="no" aria-hidden="true">07</span>
+          <div><h3>Always learning</h3><p>Diploma in Digital Marketing (SEO, email, content strategy) plus a software engineering diploma in progress.</p><div class="chips"><span>SEO</span><span>Email marketing</span></div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY: add your work in the WORK list at the bottom of this file -->
+  <section class="s light" id="gallery">
+    <div class="wrap">
+      <div class="g-top">
+        <div>
+          <h2>Selected <em>work</em></h2>
+          <p>Posters and reels I've created. Hover a reel to preview it, or click any piece to view it larger.</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter work"></div>
+      </div>
+      <div class="gallery" id="gallery-grid"></div>
+      <p class="g-note">Tip: tiles showing "Add your work" are placeholders. Put images in an <code>images</code> folder, videos in a <code>videos</code> folder, and update the <code>WORK</code> list in the code.</p>
+    </div>
+  </section>
+
+  <dialog id="lb" aria-label="Work preview">
+    <div class="lb">
+      <img id="lb-img" alt="">
+      <video id="lb-video" controls playsinline hidden></video>
+      <div class="meta">
+        <div><b id="lb-title"></b><span id="lb-cat"></span></div>
+        <div class="nav">
+          <a class="v" id="lb-link" href="#" target="_blank" rel="noopener" hidden>View post</a>
+          <button id="lb-prev" aria-label="Previous">&larr;</button>
+          <button id="lb-next" aria-label="Next">&rarr;</button>
+          <button id="lb-close" aria-label="Close">&times;</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- EXPERIENCE -->
+  <section class="s" id="experience">
+    <div class="wrap">
+      <h2>My <em>experience</em></h2>
+      <p class="sub">Where I've worked and what I delivered.</p>
+      <article class="job">
+        <div class="when">2024 to present<small>Karachi</small></div>
+        <div>
+          <h3>Assistant Admin &amp; Digital Marketing</h3>
+          <div class="org">Tareek Al Jannah Institute</div>
+          <ul>
+            <li>Create flyers, posters and reels in Canva and CapCut for Instagram and Facebook.</li>
+            <li>Run social media pages and handle WhatsApp inquiries and parent communication.</li>
+            <li>Support admissions and maintain records in MS Excel.</li>
+            <li>Manage daily admin operations, class scheduling and student registration forms.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="when">2022 to 2024<small>Pakistan</small></div>
+        <div>
+          <h3>Brand Partner</h3>
+          <div class="org">Oriflame Pakistan (Sweden Cosmetics)</div>
+          <ul>
+            <li>Built a strong client base through social media marketing and direct selling.</li>
+            <li>Managed sales, client relationships and product consultations for two years.</li>
+            <li>Created content for personal selling and handled customer queries and orders.</li>
+            <li>Met sales targets consistently while building communication and persuasion skills.</li>
+          </ul>
+        </div>
+      </article>
+      <div class="extra">
+        <div class="box hl"><h3>Project of the Month</h3><p>Awarded at Aptech ACCP AI for designing and building the 'All Abt Nobel' web platform.</p></div>
+        <div class="box"><h3>Digital Marketing diploma</h3><p>Pak College, Karachi: SEO, social media marketing, content strategy and email marketing.</p></div>
+        <div class="box"><h3>Education</h3><p>Diploma in Software Engineering, Aptech ACCP AI (ongoing). Intermediate, Pre-Engineering, Govt. Degree Girls College.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="s light" id="contact">
+    <div class="wrap">
+      <h2>Let's <em>work together</em></h2>
+      <p class="sub">Hiring for a social media or digital marketing role, or have a project in mind? Send a message and I'll reply soon.</p>
+      <div class="contact">
+        <div class="info">
+          <!-- UPDATE: contact details -->
+          <a href="mailto:syedafatimasfs20@gmail.com"><small>Email</small>syedafatimasfs20@gmail.com</a>
+          <a href="https://sfs20.github.io/Portfolio" target="_blank" rel="noopener"><small>Portfolio</small>sfs20.github.io/Portfolio</a>
+          <span><small>Location</small>Karachi, Pakistan</span>
+        </div>
+        <div class="formcard">
+          <form id="contact-form" novalidate>
+            <label>Your name<input type="text" id="name" autocomplete="name" required></label>
+            <label>Your email<input type="email" id="email" autocomplete="email" required></label>
+            <label>Message<textarea id="message" required></textarea></label>
+            <div class="btns">
+              <button class="btn lime" type="submit">Send via email app</button>
+              <button class="btn line" type="button" id="gmail-btn">Send via Gmail</button>
+            </div>
+            <div class="status" id="status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="year"></span> Syeda Fatima Qadri. All rights reserved.</div></footer>
+
+<script>
+  // UPDATE: the address that receives messages
+  const TO = "syedafatimasfs20@gmail.com";
+  const SUBJECT = "Portfolio inquiry";
+  const status = document.getElementById("status");
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // ===== GALLERY: edit this list to showcase your work =====
+  // Poster:  { title, cat: "Posters", src: "images/poster-1.jpg", link: "", size: "" }
+  // Reel:    { title, cat: "Reels", video: "videos/reel-1.mp4", src: "images/reel-1.jpg", link: "", size: "tall" }
+  //   video = link to your video file (an .mp4 in a "videos" folder, or any direct .mp4 URL)
+  //   src   = optional cover image shown before the video plays
+  //   link  = optional URL to the original post (Instagram, Facebook...), or ""
+  //   size  = "" (normal), "wide", "tall" or "big" to vary the layout
+  const WORK = [
+    { title: "Admissions Poster",  cat: "Posters", src: "images/work-1.jpg", link: "", size: "big"  },
+    { title: "Reel 1",             cat: "Reels",   video: "images/reel-1.mp4", src: "images/reel-1.jpg", link: "", size: "tall" },
+    { title: "Reel 2",             cat: "Reels",   video: "images/reel-2.mp4", src: "images/reel-2.jpg", link: "", size: "tall" },
+    { title: "Reel 3",             cat: "Reels",   video: "images/reel-3.mp4", src: "images/reel-3.jpg", link: "", size: "tall" },
+    { title: "Event Poster",       cat: "Posters", src: "images/work-2.jpg", link: "", size: "wide" },
+    { title: "Reel 4",             cat: "Reels",   video: "images/reel-4.mp4", src: "images/reel-4.jpg", link: "", size: "tall" },
+    { title: "Announcement Poster",cat: "Posters", src: "images/work-3.jpg", link: "", size: ""     },
+    { title: "Promo Poster",       cat: "Posters", src: "images/work-4.jpg", link: "", size: ""     }
+  ];
+
+  const grid = document.getElementById("gallery-grid"), filters = document.getElementById("filters");
+  const lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img"), lbVid = document.getElementById("lb-video");
+  let visible = [], current = 0;
+  const ARROW = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+  const PLAY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+
+  WORK.forEach((w, i) => {
+    const t = document.createElement("button");
+    t.className = "tile " + (w.size || "");
+    t.dataset.cat = w.cat; t.dataset.i = i;
+    t.style.animationDelay = (i * 60) + "ms";
+    t.setAttribute("aria-label", "Open " + w.title);
+    const media = w.video
+      ? '<video src="' + w.video + '#t=0.1" ' + (w.src ? 'poster="' + w.src + '" ' : '') + 'muted loop playsinline preload="metadata"></video>'
+      : '<img src="' + w.src + '" alt="' + w.title + '" loading="lazy">';
+    t.innerHTML = '<span class="fb"><b>' + String(i + 1).padStart(2, "0") + '</b>Add your work<code>' + (w.video || w.src) + '</code></span>' + media +
+      '<span class="cat">' + w.cat + '</span>' +
+      (w.video ? '<span class="play">' + PLAY + '</span>' : '') +
+      '<span class="go">' + ARROW + '</span>' +
+      '<span class="cap"><b>' + w.title + '</b><span>' + w.cat + '</span></span>';
+    const el = t.querySelector("video, img");
+    el.addEventListener("error", () => { el.remove(); t.dataset.empty = "1"; });
+    if (w.video) {
+      t.addEventListener("mouseenter", () => el.play().catch(() => {}));
+      t.addEventListener("mouseleave", () => { el.pause(); el.currentTime = 0.1; });
+    }
+    t.addEventListener("click", () => { if (!t.dataset.empty) openLb(i); });
+    grid.appendChild(t);
+  });
+
+  ["All", ...new Set(WORK.map(w => w.cat))].forEach((c, n) => {
+    const b = document.createElement("button");
+    b.textContent = c; if (!n) b.className = "on";
+    b.addEventListener("click", () => {
+      filters.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+      grid.querySelectorAll(".tile").forEach(t => { t.hidden = c !== "All" && t.dataset.cat !== c; });
+    });
+    filters.appendChild(b);
+  });
+
+  function openLb(i) {
+    visible = [...grid.querySelectorAll(".tile")].filter(t => !t.hidden && !t.dataset.empty).map(t => +t.dataset.i);
+    current = visible.indexOf(i); showLb();
+    if (!lb.open) lb.showModal();
+  }
+  function showLb() {
+    const w = WORK[visible[current]];
+    lbVid.pause();
+    if (w.video) {
+      lbImg.hidden = true; lbVid.hidden = false;
+      lbVid.src = w.video; lbVid.poster = w.src || ""; lbVid.play().catch(() => {});
+    } else {
+      lbVid.hidden = true; lbVid.removeAttribute("src"); lbImg.hidden = false;
+      lbImg.src = w.src; lbImg.alt = w.title;
+    }
+    document.getElementById("lb-title").textContent = w.title;
+    document.getElementById("lb-cat").textContent = w.cat;
+    const a = document.getElementById("lb-link");
+    a.hidden = !w.link; if (w.link) a.href = w.link;
+  }
+  const step = d => { current = (current + d + visible.length) % visible.length; showLb(); };
+  document.getElementById("lb-prev").onclick = () => step(-1);
+  document.getElementById("lb-next").onclick = () => step(1);
+  document.getElementById("lb-close").onclick = () => lb.close();
+  lb.addEventListener("close", () => { lbVid.pause(); });
+  lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+  lb.addEventListener("keydown", e => { if (e.key === "ArrowLeft") step(-1); if (e.key === "ArrowRight") step(1); });
+
+  // Logo: always return to the hero section
+  document.getElementById("logo").addEventListener("click", e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  // Count-up numbers when they scroll into view
+  const counters = document.querySelectorAll("[data-count]");
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target, end = +el.dataset.count, suf = el.dataset.suffix || "", t0 = performance.now();
+      const tick = now => { const p = Math.min((now - t0) / 900, 1); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + (p === 1 ? suf : ""); if (p < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick); io.unobserve(el);
+    }), { threshold: .6 });
+    counters.forEach(c => io.observe(c));
+  }
+
+  // Mobile menu
+  const menu = document.getElementById("menu"), links = document.getElementById("links");
+  menu.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    menu.setAttribute("aria-expanded", open);
+  });
+  links.addEventListener("click", () => { links.classList.remove("open"); menu.setAttribute("aria-expanded", false); });
+
+  function readForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    if (!name || !/^\S+@\S+\.\S+$/.test(email) || !message) {
+      status.textContent = "Please add your name, a valid email and a message.";
+      return null;
+    }
+    return message + "\n\nFrom: " + name + " (" + email + ")";
+  }
+  document.getElementById("contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const body = readForm();
+    if (!body) return;
+    window.location.href = "mailto:" + TO + "?subject=" + encodeURIComponent(SUBJECT) + "&body=" + encodeURIComponent(body);
+    status.textContent = "Your email app should open with the message ready to send.";
+  });
+  document.getElementById("gmail-btn").addEventListener("click", () => {
+    const body = readForm();
+    if (!body) return;
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(TO) + "&su=" + encodeURIComponent(SUBJECT) + "&body=" + encodeURIComponent(body), "_blank", "noopener");
+    status.textContent = "Gmail opened in a new tab with the message ready to send.";
+  });
+</script>
+</body>
+</html>
